@@ -14,7 +14,7 @@ window = Tk()
 window.title('преобразование чисел')  # название окна
 window.geometry(f'{widw}x{heiw}')  # размеры окна
 
-window.resizable(0, 0)
+window.resizable(False, False)
 
 
 # функции

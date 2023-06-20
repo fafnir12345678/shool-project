@@ -4,7 +4,10 @@ def perev10vdr(num,p): #а число p система в которую нуж�
 
     #перевод 10 в люббую другую
     num = str(num)
-    p=int(p)
+    if p.isdigit():
+        p=int(p)
+    else:
+        return 'системы счисления с  таким основанием  не бывает'
     try:
         if '.' in num:
             intnum = int(num[:num.index('.')])
@@ -41,11 +44,9 @@ def perev10vdr(num,p): #а число p система в которую нуж�
     #для дробей
     if pointnum!=0:
         res+='.'
-        a=len(str(pointnum))
+        a=len(str(pointnum))+5
         while a!=0 :
             res+=f[int(pointnum*p)]#добавление деления без остатка
             pointnum=pointnum*p-int(pointnum*p) #уходит в след цикл
             a-=1
     return res
-
-
