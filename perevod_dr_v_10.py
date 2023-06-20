@@ -50,8 +50,6 @@ def perevdrv10(num,p): #num число в системе счисления p
 
     return round(res,4)
 
-  
-
 
 
 

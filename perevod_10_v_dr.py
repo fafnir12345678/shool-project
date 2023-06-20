@@ -4,6 +4,7 @@ def perev10vdr(num,p): #а число p система в которую нуж�
 
     #перевод 10 в люббую другую
     num = str(num)
+    p=int(p)
     try:
         if '.' in num:
             intnum = int(num[:num.index('.')])
@@ -46,4 +47,5 @@ def perev10vdr(num,p): #а число p система в которую нуж�
             pointnum=pointnum*p-int(pointnum*p) #уходит в след цикл
             a-=1
     return res
+
 
